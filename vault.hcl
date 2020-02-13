@@ -1,3 +1,5 @@
+# Easy single node Vault config with local file storage. Not for production.
+
 listener "tcp" {
   address       = "0.0.0.0:8200"
   tls_cert_file = "/vault/ssl/vault-cert.crt"
