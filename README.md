@@ -1,6 +1,6 @@
 # vault-pki-auto-rotate
 
-Quick demo showing what can be done easily to rotate TLS certificates with Vault. This example rotates certs for a stock RHEL+Apache web server.
+Quick demo showing what can be easily done to rotate TLS certificates with Vault. This example rotates certs for a stock RHEL+Apache web server.
 
 I'm running it from cron to pull a new cert and private key every minute in demos, then securely delete the key from the filesystem, so the private key only exists in Apache's memory space and completely disappears on the next rotation.
 
