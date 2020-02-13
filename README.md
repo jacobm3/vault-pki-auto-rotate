@@ -9,7 +9,7 @@ For enterprise scalability I was thinking you could wrap the Vault commands in a
 https://exchange.nagios.org/directory/Plugins/Network-Protocols/HTTP/check_ssl_cert/details 
 
 When a new machine is onboarded, the admin script (or portal) does the following:
-- creates a Vault role allowing the machine's identity to pull the appropriate cert
+- creates a Vault role allowing the machine's identity to pull a cert with the appropriate CN/SAN
 - adds the machine to your existing monitoring system 
 - sets the monitoring notification target to be the requestor's team email distribution list (so the right people are notified even if the original requestor moves to another team)
 
