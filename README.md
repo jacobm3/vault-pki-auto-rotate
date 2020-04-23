@@ -1,14 +1,14 @@
 # vault-pki-auto-rotate
 
-Quick demo showing what can be easily done to rotate TLS certificates with Vault. This example rotates certs for a stock RHEL+Apache web server.
+Quick demos showing what can be easily done to rotate TLS certificates with Vault. Example scripts for Apache on RHEL and Ubuntu, using Vault token auth, Alicloud RAM/ECS identity auth, and Azure managed identities.
 
-I'm running it from cron to pull a new cert and private key every minute in demos, then securely delete the key from the filesystem, so the private key only exists in Apache's memory space and completely disappears on the next rotation.
+It runs from cron to pull a new cert and private key every minute (for demos), then scrubs the private key from the filesystem, so it only exists in Apache's memory space and completely disappears on the next rotation. 
 
 ## Machine Identity Auth
 
 ![alt text](https://www.vaultproject.io/img/vault-secure-intro-2.png "Machine Auth")
 
-Alicloud and Azure examples of machine auth in the 'ali' and 'azure' directories.
+Alicloud (linux) and Azure (Windows powershell) examples of machine auth are in the 'ali' and 'azure' directories.
 
 
 ## Monitoring and Onboarding Workflow
